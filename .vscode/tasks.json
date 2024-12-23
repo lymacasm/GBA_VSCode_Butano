@@ -19,8 +19,19 @@
         {
             "label": "make debug",
             "type": "process",
-            "command": "make",
-            "args": ["DEBUG=1"],
+            "linux": {
+                // bash -c is used to allow the use of -j$(nproc)
+                "command": "bash",
+                "args": ["-c", "make DEBUG=1 -j$(nproc)"]
+            },
+            "osx": {
+                "command": "make",
+                "args": ["DEBUG=1"]
+            },
+            "windows": {
+                "command": "make",
+                "args": ["DEBUG=1"]
+            },
             "problemMatcher": []
         },
         {
