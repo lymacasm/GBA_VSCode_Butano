@@ -36,6 +36,16 @@
                         "text": "file ${workspaceFolder}/${workspaceFolderBasename}.elf -enable-pretty-printing"
                     }]
             },
+            "linux": {
+                "miDebuggerPath": "/opt/devkitpro/devkitARM/bin/arm-none-eabi-gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "ignoreFailures": true,
+                        "text": "file ${workspaceFolder}/${workspaceFolderBasename}.elf -enable-pretty-printing"
+                    }
+                ]
+            }
         }
     ]
 }
