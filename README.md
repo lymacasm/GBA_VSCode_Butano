@@ -1,6 +1,6 @@
 # GBA_VSCode_Butano
 A 'simple' Game Boy Advance development setup using Visual Studio Code and relying on devkitPro and devkitARM to do the heavy lifting.
-This has been modified from the original fork by JamieDStewart to get Linux working with the mGBA debugger. It also has had some c_cpp_properties modified for linux to include Butano directories. The Butano directories right now are hardcoded to ~/deps/butano, so may need to be modified per-setup if your butano clone is kept elsewhere.
+This has been modified from the original fork by JamieDStewart to get Linux working with the mGBA debugger.
 **If You're on OS X there's a bit at the bottom of this you should read**
 
 ## Dependencies
